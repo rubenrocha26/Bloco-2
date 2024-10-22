@@ -12,10 +12,10 @@ public class Exercicio_18 {
 
         if (horasTrabalho >= 0) {
 
-            if (horasTrabalho > 35) {
+            if (horasTrabalho >= 36) {
                 int horasExtras = horasTrabalho - 35;
 
-                if (horasExtras <= 5) {  //Trabalho com horas extras
+                if (horasExtras < 6) {  //Trabalho com horas extras
                     salario = (35 * precoHora) + (horasExtras * precoHoraExtra);
                 }
                 else {  //Trabalho com horas extraextra
